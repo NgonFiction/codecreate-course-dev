@@ -1,0 +1,14 @@
+#inputDiv {
+}
+
+#newPhraseButton {
+  display: none;
+}
+
+#answerDiv {
+  clear: both;
+}
+
+#hangmanDiv {
+  display: none;
+}
