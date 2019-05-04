@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hangman: Hang in there!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="hangman.js"></script>
+</head>
+
+<body>
+  <div id="gameDiv">
+    <h1>Hangman</h1>
+    <h3>Enter a word or phrase to guess!</h3>
+    <input type="password" id="phraseInput">
+    <button type="button" onclick="setPhrase()">Set Phrase</button>
+    <br>
+    <img src="hangman1.png" width=250 id="hangmanImg"></img>
+
+    <h2 id="answer"></h2>
+    <p id="guesses"></p>
+
+    <input type="text" id="guessInput" maxlength=1>
+    <button type="button" onclick="checkGuess()">Check</button>
+  </div>
+</body>
+
+</html>
