@@ -1,0 +1,23 @@
+.characterProfileDiv {
+    float: left;
+    display: flex;
+}
+
+.characterDescDiv {
+    margin-left: 5%;
+}
+
+.topRankingsDiv {
+    clear: both; 
+    float: left; 
+    display: block;
+}
+
+.favCharDiv {
+    float: left;
+    margin-right: 50px;
+}
+
+body {
+    background-color:black;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Hangman: Hang in there!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="hangman.js"></script>
+</head>
+
+<body>
+  <h1>Hangman</h1>
+  <!-- New phrase input box with add button -->
+  <div id="inputDiv">
+    <input type="password" id="phraseInput">
+    <button type="button" class="btn btn-info btn-sm" onclick="addPhrase()">Add Phrase</button>
+  </div>
+
+  <!-- New phrase button that appears after hangman game is completed -->
+  <button type="button" class="btn btn-warning" id="newPhraseButton">Add new phrase</button>
+
+  <!-- The hangman game is in this div container -->
+  <div id="hangmanDiv">
+    <!-- Hangman Image - starts at hangman0.png -->
+    <img src="hangman1.png" width=300 id="hangmanImg"><img>
+    <!-- Answer with missing chars to guess
+             Eg: The phrase "Test" will initially be ----
+        -->
+    <h2 id="answer"></h2>
+    <!-- List of incorrect guesses for someone guessing the phrase "Funny"
+             Eg: R T C S A
+        -->
+    <p id="guesses"></p>
+
+    <!-- Guess input box and check button -->
+    <input type="text" id="guessInput">
+    <button type="button" class="btn btn-success" onclick="checkGuess()">Check</button>
+  </div>
+</body>
+
+</html>
